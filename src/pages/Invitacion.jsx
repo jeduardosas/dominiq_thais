@@ -32,7 +32,7 @@ const Invitacion = () => {
 
   const data = getData('XV')
 
-  const song = './music/song1.mp3'
+  const song = './music/song.mp3'
 
   
   const [play,setPlay] = useState(false); //estado para manejar la reproduccion del audio
@@ -92,8 +92,9 @@ const Invitacion = () => {
         <h2 className="modal-tittle-2">
             <p>{data.nombre}</p>
         </h2>
-        <p className="modal-content">Para una mejor experiencia, por favor acepta la reproducción automática.</p>   
+        <p className="modal-content">Para una mejor experiencia, por favor acepta la reproducción automática.</p>  
         <button className="modal-button" onClick={handlePlay}>Aceptar</button>
+        
       </Modal>
 
       {
@@ -115,7 +116,7 @@ const Invitacion = () => {
 
             
       
-            <section className="datos centrar">
+            <section className="datos">
             <section className="datos-padres">
                 <h2 className="datos-padres-tittle">En compañia de mis Padres</h2>
                 <div className="datos-padres-papas">
@@ -153,7 +154,7 @@ const Invitacion = () => {
                 </div>
               </section>
 
-              <div className="banner">
+              <div style={{width:'100%'}} className="banner">
                 <img src={`./img/${data.imagenes.imgBanner1}.webp`} alt="img-banner" />
               </div>
 
@@ -188,7 +189,7 @@ const Invitacion = () => {
               </div> {/*::::::::::F I N   D E   I T E M  :::::::::: */}
 
               <div className="datos-item">
-                <div className="datos-item_tittle">
+                <div style={{width:'90%'}} className="datos-item_tittle">
                   <div className="datos-item_tittle-icon">
                     <img src="./icons/recepcion.svg" alt="" />
                   </div>
@@ -197,23 +198,23 @@ const Invitacion = () => {
                   </div>
                 </div>
 
-                <div className="datos-item_body">
+                <div style={{width:'90%'}} className="datos-item_body">
                   <div className="datos-item_body-hn">
                     <p className="datos-item_body-hn-h">{data.recepcion.hora} : {data.recepcion.minutos} hrs.</p>
                     <p className="datos-item_body-hn-n">{data.recepcion.lugar}</p>
                   </div>
-                  <div className="datos-item_body-direc">
+                  {/* <div className="datos-item_body-direc">
                     <p>{data.recepcion.direccion}</p>
                     <p>{data.recepcion.direccionCol}</p>
                     <p>{data.recepcion.direccionCd}</p>
-                  </div>
+                  </div> */}
                 </div>
 
-                <div className="datos-item-fotter">
+                {/* <div className="datos-item-fotter">
                   <button className='datos-item-fotter-button'>
                     <a href={data.recepcion.ubicacion}>Ver ubicación</a>
                   </button>
-                </div>
+                </div> */}
                 
               </div> {/*::::::::::F I N   D E   I T E M  :::::::::: */}
               
@@ -225,13 +226,13 @@ const Invitacion = () => {
               data={data}/>
 
             <div className="banner">
-              <img src={`./img/${data.imagenes.imgBanner2}.webp`} alt="" />
+              <img src={`./img/${data.imagenes.img}.webp`} alt="" />
             </div>
 
             {/*::::::::::R E G A L O S :::::::::: */}
 
             <div className="banner-img">
-              <img src={`./img/${data.imagenes.imgBanner3}.webp`} alt="imagen_2" />
+              <img src={`./img/${data.imagenes.imgFondo1}.webp`} alt="imagen_2" />
             </div>
 
             <section className="regalos">
@@ -242,8 +243,8 @@ const Invitacion = () => {
                   <h3>Código de Vestimenta</h3>
                 </div>
                 <div className="regalos-vestimenta-body">
-                  <p>Formal</p>
-                  <p>El color Rosa es Exclusivo de la Quinceañera</p>
+                  <p style={{textTransform:'uppercase',fontSize:'25px',textAlign:'start'}}>Formal</p>
+                  <p>El color Rosa es Exclusivo de la Quinceañera.</p>
                   
                 </div>
               </div>
@@ -259,13 +260,15 @@ const Invitacion = () => {
                 </div>
               </div>
 
-              <div className="regalos-banner">
-                <img src={`./img/${data.imagenes.imgBanner}.webp`} alt="" />
-              </div>
-            </section>
-
             <div className="banner">
               <img src={`./img/${data.imagenes.imgBanner2}.webp`} alt="" />
+            </div>
+            </section>
+
+            
+
+            <div className="banner">
+              <img src={`./img/${data.imagenes.imgFondo2}.webp`} alt="" />
             </div>
 
             <Slider />

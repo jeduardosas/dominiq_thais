@@ -12,7 +12,7 @@
 }
 
 .custom-date-color{
- 
+ color: var(--color_text);
 }
 @media (max-width: 768px) {
   .timeline{

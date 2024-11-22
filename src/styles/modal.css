@@ -11,13 +11,14 @@
 }
 .modal-tittle-2 p{
   font-size: 35px;
-  
+  color: var(--back-color);
 }
  
 .modal-content{
   margin-bottom: 20px;
   font-style: italic;
   font-size: 18px;
+  color: var(--back-color);
 }
 
 .modal-button{
@@ -26,6 +27,6 @@
   font-size: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  color:#f5f0ea;
+  color:var(--back-color);
   cursor:pointer;
 }

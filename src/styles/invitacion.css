@@ -166,8 +166,8 @@
 }
 .datos-item{
   padding: 20px;
-  background-color: #f5f0ea;
-  width: 100%;
+  background-color:var(--color_card);
+  width: 85%;
   margin-bottom:30px ;
   border-bottom-left-radius:90px ;
   display: flex;
@@ -188,6 +188,7 @@
   font-style: italic;
   letter-spacing: 3px;
   font-size: 18px;
+  color:var(--color_principal)
 }
 .datos-item_body{
   width: 100%;
@@ -240,7 +241,7 @@
   width: 100%;
   margin-top: 49px;
   background-color: var(--color_principal);
-  padding: 30px;
+  padding: 25px 0;
   box-sizing: border-box;
 }
 .regalos-banner img{
@@ -249,14 +250,13 @@
 }
 .regalos-vestimenta,
 .regalos-sobres{
-  margin:50px 0;
+  margin:50px auto;
 }
 .regalos-vestimenta-body{
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   gap: 30px;
 }
 .regalos-vestimenta-body span{
@@ -301,7 +301,7 @@
 .regalos-sobres,
 .regalos-mesa,
 .regalos-vestimenta{
-  width: 100%;
+  width: 90%;
 }
 
 .regalos-sobres-tittle,
@@ -337,7 +337,7 @@
 .regalos-sobres-tittle h3,
 .regalos-mesa-tittle h3,
 .regalos-vestimenta-tittle h3{
-  color: var(--color_text);
+  color: var(--back-color);
   letter-spacing: 2px;
   font-style: italic;
 }

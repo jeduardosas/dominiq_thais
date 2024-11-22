@@ -5,8 +5,8 @@ const datosComunes = {
     imgBanner1:'banner1',
     imgBanner2:'banner2',
     imgBanner3:'banner3',
-    imgFondo1:'',
-    imgFondo2:''
+    imgFondo1:'flor1',
+    imgFondo2:'flor2'
   },
   fechaDia:'20',
   fechaMes:'Diciembre',
@@ -37,7 +37,7 @@ const datosComunes = {
   timeLine:{
     settings:{
       bgColor:'var(--color_card)',
-      color:'var(--color_text)',
+      color:'var(--color_principal)',
       lineColor:'var(--color_card)'
     },
     protocol:[
